@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./js/index.js"></script>
+  
   <link rel="stylesheet" href="./styles/index.css">
   <title>Document</title>
 </head> 
 <body>
   <!-- todo를 보여줄 html 마크업 -->
   <main>
-    <b>TodoList</b>
+    <b>TodoList</b><br>
+    
+    <input type="text" id="todoWrite">
+    <button id="addButton" onclick="addTodo()">추가</button><br>
+    
+    <ul id="todoList">
+      <!-- 여기에 todoList가 들어오면 될 것같음 -->
+      <!-- id를 지정해 놨으니 document.getElementById 를 사용해서 js코드를 만들면 될 것 같음-->
+    </ul>
   </main>
-  
-  <input type="text" id="todoWrite">
-  <button>추가</button><br>
-  
-  <ul id="todoList">
-    <!-- 여기에 todoList가 들어오면 될 것같음 -->
-    <!-- id를 지정해 놨으니 document.getElementById 를 사용해서 js코드를 만들면 될 것 같음-->
-  </ul>
+<script src="./js/index.js"></script>
 </body>
 </html>
+
+
+<!-- input과 button에 id를 지정하여 javascript에서 설계할 때 사용, js파일을 제일 아래로 위치시켜서 html태그를 읽을 수 있도록 변경하였음-->
