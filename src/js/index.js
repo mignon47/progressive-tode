@@ -23,3 +23,16 @@ function showTodoList() {
 window.onload = showTodoList;
 
 // 2. TODO 리스트에 새로운 TODO를 추가하는 로직 작성
+function addTodo() {
+  const todoInput = document.getElementById('todoWrite');
+  const newTodo = todoInput.value; 
+
+
+  if (newTodo.length != 0) {
+    todoList.innerHTML += `<li>${newTodo}</li>`
+    todoInput.value = ''; 
+
+  } else {
+    alert('할 일을 입력하세요!');
+  }
+}
