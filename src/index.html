@@ -10,15 +10,15 @@
 <body>
   <!-- todo를 보여줄 html 마크업 -->
   <main>
-    <b>TodoList</b>
+    <b>TodoList</b><br>
+    
+    <input type="text" id="todoWrite">
+    <button id="addButton" onclick="addTodo()">추가</button><br>
+    
+    <ul id="todoList">
+      <!-- 여기에 todoList가 들어오면 될 것같음 -->
+      <!-- id를 지정해 놨으니 document.getElementById 를 사용해서 js코드를 만들면 될 것 같음-->
+    </ul>
   </main>
-  
-  <input type="text" id="todoWrite">
-  <button>추가</button><br>
-  
-  <ul id="todoList">
-    <!-- 여기에 todoList가 들어오면 될 것같음 -->
-    <!-- id를 지정해 놨으니 document.getElementById 를 사용해서 js코드를 만들면 될 것 같음-->
-  </ul>
 </body>
 </html>
